@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#34352d" />
+    <meta
+      name="description"
+      content="Explore Arroyo Fold, a 1958 desert home."
+    />
+    <title>Arroyo Fold</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23343c31'/%3E%3Cpath d='M8 24 32 34 56 24M13 27v25h38V27' fill='none' stroke='%23e4d5b5' stroke-width='3'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas
+      id="view"
+      aria-label="Arroyo Fold interactive house"
+      tabindex="0"
+    ></canvas>
+    <main id="start-screen" aria-labelledby="house-title">
+      <p class="year">1958</p>
+      <h1 id="house-title">Arroyo Fold</h1>
+      <nav class="start-actions" aria-label="Explore the house">
+        <button id="start-walk" disabled>Loading…</button
+        ><span aria-hidden="true">/</span
+        ><button id="start-tour" disabled>Play tour</button>
+      </nav>
+      <p id="load-status" role="status">Preparing the house</p>
+    </main>
+    <div id="hud" hidden>
+      <div id="walk-hint">
+        WASD to walk <span>·</span> Drag to look <span>·</span> E to interact
+      </div>
+      <div class="hud-actions">
+        <button id="sound-toggle" aria-pressed="false">Sound on</button
+        ><button id="pause-open">Pause <span class="key">Esc</span></button>
+      </div>
+      <button id="interaction" hidden></button>
+      <div id="tour-caption" aria-live="polite"></div>
+      <div id="reticle" aria-hidden="true"></div>
+    </div>
+    <div id="touch-controls" hidden aria-label="Walk controls">
+      <button data-move="forward" aria-label="Walk forward">↑</button
+      ><button data-move="left" aria-label="Walk left">←</button
+      ><button data-move="backward" aria-label="Walk backward">↓</button
+      ><button data-move="right" aria-label="Walk right">→</button>
+    </div>
+    <div id="scene-fade" aria-hidden="true"></div>
+    <dialog id="pause-menu" aria-labelledby="pause-title">
+      <form method="dialog">
+        <div class="dialog-heading">
+          <h2 id="pause-title">Arroyo Fold</h2>
+          <button id="pause-close" aria-label="Resume exploring">×</button>
+        </div>
+        <div class="pause-actions">
+          <button id="resume" autofocus>Resume walk</button
+          ><button id="tour-toggle" type="button">Play tour</button
+          ><button id="return-start" type="button">Return to the view</button>
+        </div>
+        <label class="time-label" for="time-slider"
+          >Time of day
+          <output id="time-label" for="time-slider">Golden hour</output></label
+        >
+        <input
+          id="time-slider"
+          type="range"
+          min="0"
+          max="1"
+          step="0.001"
+          value="0.4"
+        />
+        <div class="time-markers" aria-hidden="true">
+          <span>Afternoon</span><span>Night</span>
+        </div>
+        <div class="help">
+          <p>
+            <kbd>W A S D</kbd> or arrow keys to walk · <kbd>Shift</kbd> to move
+            faster
+          </p>
+          <p>Drag to look, or click the view to lock the mouse</p>
+          <p>
+            <kbd>E</kbd> / click or tap to use an object · <kbd>M</kbd> sound ·
+            <kbd>T</kbd> tour
+          </p>
+          <p><kbd>H</kbd> hide controls · <kbd>Esc</kbd> pause</p>
+        </div>
+        <button id="pause-sound" type="button" aria-pressed="false">
+          Mute sound
+        </button>
+      </form>
+    </dialog>
+    <div
+      id="announcement"
+      class="sr-only"
+      role="status"
+      aria-live="polite"
+    ></div>
+    <script type="module" src="./app.js?v=cbcfac1f30d0"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+SOUND CREDITS
+
+Environmental sound effects generated with ElevenLabs.
+Credit: ElevenLabs.io — https://elevenlabs.io
+
+wind.ogg
+Gentle dry desert breeze, with a distant hawk; edited into a seamless loop.
+Public source page: https://elevenlabs.io/sound-effects/desert
+Library source: Ambient desert badlands soundscape for continuous background loop.
+
+birds.ogg
+Finch song, arranged as three sparse calls with long silences.
+Public source page: https://elevenlabs.io/sound-effects/birds-chirping
+Library source: Melodic finch song, cheerful and uplifting.
+
+pool.ogg
+Low pool-filter hum and faint water movement; edited into a seamless loop.
+Public source page: https://elevenlabs.io/sound-effects/pool
+Library source: The low hum of a pool filter, occasionally interrupted by the faint sounds of a distant swim stroke.
+
+fire.ogg
+Wood-fire crackle; edited and gently compressed into a seamless loop.
+Public source page: https://elevenlabs.io/sound-effects/western
+Library source: Crackling campfire with ambient night sounds, establishing a Western atmosphere.
+
+night.ogg
+Sparse desert-night insects and distant cricket chirps; edited into a seamless loop.
+Public source page: https://elevenlabs.io/sound-effects/desert
+Library source: Very sparse desert night insects, occasional distant cricket chirps.
+
+record.ogg
+Original instrumental hi-fi music generated for this experience with ElevenLabs Music.
+Service: https://elevenlabs.io/music
+The original 48-second recording has a crossfaded boundary for continuous playback.
+
+Audio preparation: filtering, gentle level adjustment, crossfades, and Ogg Vorbis encoding.

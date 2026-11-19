@@ -1,0 +1,31 @@
+Original generated spot effects from the ElevenLabs sound effects library. Clips have been edited for proximity and duration.
+
+latch.ogg — Door latch engaging
+https://elevenlabs.io/sound-effects/closing
+
+switch.ogg — Bakelite switch click
+https://elevenlabs.io/sound-effects/light-switch
+
+slide.ogg — Glass door sliding in its track
+https://elevenlabs.io/sound-effects/sliding-door
+
+car-close.ogg — Steel car door closing
+https://elevenlabs.io/sound-effects/car-door
+
+splash.ogg — Body entering water
+https://elevenlabs.io/sound-effects/water-splash
+
+ripple.ogg — Small surface splash
+https://elevenlabs.io/sound-effects/water-splash
+
+page.ogg — Paper turning
+https://elevenlabs.io/sound-effects/page-turn
+
+faucet-kitchen.ogg — Steady kitchen faucet
+https://elevenlabs.io/sound-effects/water-faucet
+
+faucet-bath.ogg — Bathroom faucet trickle
+https://elevenlabs.io/sound-effects/water-faucet
+
+dial.ogg — Rotary dial returning
+https://elevenlabs.io/sound-effects/phone-dial

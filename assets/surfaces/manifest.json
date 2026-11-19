@@ -1,0 +1,702 @@
+{
+  "surfaces": {
+    "wood": {
+      "albedo": "wood.ktx2",
+      "fallback": "wood.webp",
+      "normal": "wood-normal.ktx2",
+      "normalFallback": "wood-normal.webp",
+      "roughness": "wood-roughness.ktx2",
+      "roughnessFallback": "wood-roughness.webp",
+      "worldMeters": [
+        0.55,
+        2.0
+      ],
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "normalDimensions": [
+        1024,
+        1024
+      ],
+      "recommendedNormalScale": 0.8,
+      "albedoGain": 1.23,
+      "roughnessMode": "relative: final clamp(vFinish.x + (tex.g - 0.5) * 0.35, 0.06, 1.0)",
+      "provenance": "Photographic hardwood veneer: flowing grain, pores and mineral streaks; rotated to the existing V-direction grain",
+      "source": {
+        "asset": "Rosewood Veneer 02",
+        "url": "https://polyhaven.com/a/rosewood_veneer_02",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "authors": {
+          "Jenelle van Heerden": "All"
+        },
+        "sourceDimensionsMillimeters": [
+          1000,
+          1000
+        ],
+        "files": [
+          {
+            "asset": "rosewood_veneer_02",
+            "kind": "Diffuse",
+            "path": "rosewood_veneer_02_diff_2k.jpg",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rosewood_veneer_02/rosewood_veneer_02_diff_2k.jpg",
+            "md5": "5ef2d0ad249a111c1a0badfc5c77c046",
+            "bytes": 2670576
+          },
+          {
+            "asset": "rosewood_veneer_02",
+            "kind": "nor_gl",
+            "path": "rosewood_veneer_02_nor_gl_2k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_nor_gl_2k.png",
+            "md5": "d9cc1d07e166e59acbefbe0e49efa908",
+            "bytes": 18970849
+          },
+          {
+            "asset": "rosewood_veneer_02",
+            "kind": "Rough",
+            "path": "rosewood_veneer_02_rough_2k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rosewood_veneer_02/rosewood_veneer_02_rough_2k.png",
+            "md5": "b14f35f79cdbecea865408af1c01be27",
+            "bytes": 7055266
+          }
+        ]
+      },
+      "processing": {
+        "rotationQuarterTurnsCounterclockwise": 1,
+        "tintableLuminanceMeanTarget": 217,
+        "tonalDetailStandardDeviationTarget": 38,
+        "scanNormalSlopeGain": 2.2,
+        "boundaryCorrection": "Poisson periodic component, no mirrored tiling",
+        "normalConvention": "OpenGL +Y, rotated tangent vectors with scan",
+        "photographicColor": "Source dye removed; geometry supplies palette; weak mineral chroma retained"
+      },
+      "statistics": {
+        "albedo": {
+          "mean": 218.1823766231537,
+          "std": 26.282421522660854,
+          "range": [
+            162,
+            254
+          ],
+          "seam": {
+            "edgeMean": 3.4226888020833335,
+            "adjacentMean": 13.809196210027887,
+            "ratio": 0.24785575858483813
+          }
+        },
+        "normal": {
+          "mean": 170.06307093302408,
+          "std": 60.143190103998776,
+          "range": [
+            85,
+            255
+          ],
+          "seam": {
+            "edgeMean": 0.7293294270833334,
+            "adjacentMean": 1.8807440267086184,
+            "ratio": 0.38778771418441815
+          }
+        },
+        "roughness": {
+          "mean": 124.8802843093872,
+          "std": 25.40953459336441,
+          "range": [
+            76,
+            185
+          ],
+          "seam": {
+            "edgeMean": 4.03759765625,
+            "adjacentMean": 12.981493520130742,
+            "ratio": 0.3110272057671016
+          }
+        }
+      }
+    },
+    "stone": {
+      "albedo": "stone.ktx2",
+      "fallback": "stone.webp",
+      "normal": "stone-normal.ktx2",
+      "normalFallback": "stone-normal.webp",
+      "roughness": "stone-roughness.ktx2",
+      "roughnessFallback": "stone-roughness.webp",
+      "worldMeters": [
+        0.85,
+        0.85
+      ],
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "normalDimensions": [
+        1024,
+        1024
+      ],
+      "recommendedNormalScale": 0.7,
+      "albedoGain": 1.23,
+      "roughnessMode": "relative: final clamp(vFinish.x + (tex.g - 0.5) * 0.35, 0.06, 1.0)",
+      "provenance": "Photographed natural mineral rock face: granular pores and broad aggregate variation, adapted to dressed sandstone",
+      "source": {
+        "asset": "Rock Surface",
+        "url": "https://polyhaven.com/a/rock_surface",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "authors": {
+          "Amal Kumar": "All"
+        },
+        "sourceDimensionsMillimeters": [
+          2000,
+          2000
+        ],
+        "files": [
+          {
+            "asset": "rock_surface",
+            "kind": "Diffuse",
+            "path": "rock_surface_diff_1k.jpg",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_surface/rock_surface_diff_1k.jpg",
+            "md5": "a7285f02b40e8ed6f15f8e97e357031d",
+            "bytes": 886291
+          },
+          {
+            "asset": "rock_surface",
+            "kind": "nor_gl",
+            "path": "rock_surface_nor_gl_1k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rock_surface/rock_surface_nor_gl_1k.png",
+            "md5": "13b443535b42f9b6809ecf211bfe4bf0",
+            "bytes": 5865641
+          },
+          {
+            "asset": "rock_surface",
+            "kind": "Rough",
+            "path": "rock_surface_rough_1k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/rock_surface/rock_surface_rough_1k.png",
+            "md5": "a788943087cf8fc1be659f5f20519bed",
+            "bytes": 1861150
+          }
+        ]
+      },
+      "processing": {
+        "rotationQuarterTurnsCounterclockwise": 0,
+        "tintableLuminanceMeanTarget": 222,
+        "tonalDetailStandardDeviationTarget": 29,
+        "scanNormalSlopeGain": 1.6,
+        "boundaryCorrection": "Poisson periodic component, no mirrored tiling",
+        "normalConvention": "OpenGL +Y, rotated tangent vectors with scan",
+        "photographicColor": "Source dye removed; geometry supplies palette; weak mineral chroma retained"
+      },
+      "statistics": {
+        "albedo": {
+          "mean": 221.21640078226724,
+          "std": 20.81954804459958,
+          "range": [
+            182,
+            254
+          ],
+          "seam": {
+            "edgeMean": 8.41064453125,
+            "adjacentMean": 16.325637136231265,
+            "ratio": 0.5151801709829977
+          }
+        },
+        "normal": {
+          "mean": 166.99527517954508,
+          "std": 62.124858481925884,
+          "range": [
+            6,
+            255
+          ],
+          "seam": {
+            "edgeMean": 8.551106770833334,
+            "adjacentMean": 18.038621789976375,
+            "ratio": 0.47404435163583153
+          }
+        },
+        "roughness": {
+          "mean": 128.36339664459229,
+          "std": 21.4738934630831,
+          "range": [
+            83,
+            172
+          ],
+          "seam": {
+            "edgeMean": 6.9775390625,
+            "adjacentMean": 14.920789612353373,
+            "ratio": 0.4676387271571127
+          }
+        }
+      }
+    },
+    "linen": {
+      "albedo": "linen.ktx2",
+      "fallback": "linen.webp",
+      "normal": "linen-normal.ktx2",
+      "normalFallback": "linen-normal.webp",
+      "roughness": "linen-roughness.ktx2",
+      "roughnessFallback": "linen-roughness.webp",
+      "worldMeters": [
+        0.48,
+        0.48
+      ],
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "normalDimensions": [
+        1024,
+        1024
+      ],
+      "recommendedNormalScale": 0.7,
+      "albedoGain": 1.23,
+      "roughnessMode": "relative: final clamp(vFinish.x + (tex.g - 0.5) * 0.35, 0.06, 1.0)",
+      "provenance": "Photographed woven linen: actual warp/weft, thread irregularity and fibre variation; blue source dye removed",
+      "source": {
+        "asset": "Rough Linen",
+        "url": "https://polyhaven.com/a/rough_linen",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "authors": {
+          "colormass": "Photography",
+          "Rico Cilliers": "Processing"
+        },
+        "sourceDimensionsMillimeters": [
+          270.7081392676629,
+          271.29998803138733
+        ],
+        "files": [
+          {
+            "asset": "rough_linen",
+            "kind": "Diffuse",
+            "path": "rough_linen_diff_2k.jpg",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rough_linen/rough_linen_diff_2k.jpg",
+            "md5": "1287d4d1183c511e4adc55b8d006d763",
+            "bytes": 3607181
+          },
+          {
+            "asset": "rough_linen",
+            "kind": "nor_gl",
+            "path": "rough_linen_nor_gl_2k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rough_linen/rough_linen_nor_gl_2k.png",
+            "md5": "c790b11f591f898dbec1d75733159fb3",
+            "bytes": 22196908
+          },
+          {
+            "asset": "rough_linen",
+            "kind": "Rough",
+            "path": "rough_linen_rough_2k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/2k/rough_linen/rough_linen_rough_2k.png",
+            "md5": "995eab4d5b920571255da3c4b143f2aa",
+            "bytes": 8211415
+          }
+        ]
+      },
+      "processing": {
+        "rotationQuarterTurnsCounterclockwise": 0,
+        "tintableLuminanceMeanTarget": 223,
+        "tonalDetailStandardDeviationTarget": 19,
+        "scanNormalSlopeGain": "RMS slope target .14",
+        "boundaryCorrection": "Central 1408px scan crop; high/low frequency separation; four raised-cosine toroidal overlap patches; stationary local RMS envelope; no Poisson edge correction",
+        "normalConvention": "OpenGL +Y, rotated tangent vectors with scan",
+        "photographicColor": "Source dye removed; geometry supplies palette; weak mineral chroma retained",
+        "sourceCropPixels": [
+          320,
+          320,
+          1728,
+          1728
+        ]
+      },
+      "statistics": {
+        "albedo": {
+          "mean": 223.68863677978516,
+          "std": 14.81670180476637,
+          "range": [
+            193,
+            251
+          ]
+        },
+        "normal": {
+          "mean": 169.20724487304688,
+          "std": 60.666012474713774,
+          "range": [
+            69,
+            255
+          ]
+        },
+        "roughness": {
+          "mean": 127.43389129638672,
+          "std": 18.050842360198708,
+          "range": [
+            91,
+            164
+          ]
+        }
+      }
+    },
+    "terrazzo": {
+      "albedo": "terrazzo.ktx2",
+      "fallback": "terrazzo.webp",
+      "normal": "terrazzo-normal.ktx2",
+      "normalFallback": "terrazzo-normal.webp",
+      "worldMeters": [
+        1.25,
+        1.25
+      ],
+      "normalHeightStdMeters": 4.5e-05,
+      "provenance": "Original deterministic cast terrazzo aggregate, seed 1957",
+      "mean": 230.52,
+      "std": 9.104,
+      "range": [
+        165,
+        251
+      ],
+      "seamMean": 2.087,
+      "internalGradientMean": 2.505,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "gravel": {
+      "albedo": "gravel.ktx2",
+      "fallback": "gravel.webp",
+      "normal": "gravel-normal.ktx2",
+      "normalFallback": "gravel-normal.webp",
+      "roughness": "gravel-roughness.ktx2",
+      "roughnessFallback": "gravel-roughness.webp",
+      "worldMeters": [
+        1.5,
+        1.5
+      ],
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "normalDimensions": [
+        1024,
+        1024
+      ],
+      "recommendedNormalScale": 0.85,
+      "albedoGain": 1.23,
+      "roughnessMode": "relative: final clamp(vFinish.x + (tex.g - 0.5) * 0.35, 0.06, 1.0)",
+      "provenance": "Photographed sandy gravel: real irregular pebble distribution and granular sand; preserves warm terrain tint",
+      "source": {
+        "asset": "Sandy Gravel 02",
+        "url": "https://polyhaven.com/a/sandy_gravel_02",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "authors": {
+          "Dario Barresi": "All"
+        },
+        "sourceDimensionsMillimeters": [
+          2529.9999713897705,
+          2529.9999713897705
+        ],
+        "files": [
+          {
+            "asset": "sandy_gravel_02",
+            "kind": "Diffuse",
+            "path": "sandy_gravel_02_diff_1k.jpg",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/sandy_gravel_02/sandy_gravel_02_diff_1k.jpg",
+            "md5": "e8f0496f1e0e923514470171de033bf9",
+            "bytes": 947222
+          },
+          {
+            "asset": "sandy_gravel_02",
+            "kind": "nor_gl",
+            "path": "sandy_gravel_02_nor_gl_1k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/sandy_gravel_02/sandy_gravel_02_nor_gl_1k.png",
+            "md5": "ccaa8e41db9f03c9b5a289524d7592c0",
+            "bytes": 5962726
+          },
+          {
+            "asset": "sandy_gravel_02",
+            "kind": "Rough",
+            "path": "sandy_gravel_02_rough_1k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/sandy_gravel_02/sandy_gravel_02_rough_1k.png",
+            "md5": "d6ca7b80f902f0be71ca8d6103bea94d",
+            "bytes": 1696320
+          }
+        ]
+      },
+      "processing": {
+        "rotationQuarterTurnsCounterclockwise": 0,
+        "tintableLuminanceMeanTarget": 219,
+        "tonalDetailStandardDeviationTarget": 27,
+        "scanNormalSlopeGain": 1.2,
+        "boundaryCorrection": "Poisson periodic component, no mirrored tiling",
+        "normalConvention": "OpenGL +Y, rotated tangent vectors with scan",
+        "photographicColor": "Source dye removed; geometry supplies palette; weak mineral chroma retained"
+      },
+      "statistics": {
+        "albedo": {
+          "mean": 218.7572479248047,
+          "std": 18.929708816928294,
+          "range": [
+            173,
+            254
+          ],
+          "seam": {
+            "edgeMean": 7.47509765625,
+            "adjacentMean": 14.969099226895976,
+            "ratio": 0.4993685687391927
+          }
+        },
+        "normal": {
+          "mean": 168.1693541208903,
+          "std": 61.365772301924174,
+          "range": [
+            11,
+            255
+          ],
+          "seam": {
+            "edgeMean": 9.334798177083334,
+            "adjacentMean": 18.298170241986398,
+            "ratio": 0.5101492692238705
+          }
+        },
+        "roughness": {
+          "mean": 128.2672348022461,
+          "std": 18.616888764262086,
+          "range": [
+            87,
+            168
+          ],
+          "seam": {
+            "edgeMean": 7.970703125,
+            "adjacentMean": 15.490127459066471,
+            "ratio": 0.5145666584127877
+          }
+        }
+      }
+    },
+    "plaster": {
+      "albedo": "plaster.ktx2",
+      "fallback": "plaster.webp",
+      "normal": "plaster-normal.ktx2",
+      "normalFallback": "plaster-normal.webp",
+      "roughness": "plaster-roughness.ktx2",
+      "roughnessFallback": "plaster-roughness.webp",
+      "worldMeters": [
+        0.8,
+        0.8
+      ],
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "normalDimensions": [
+        1024,
+        1024
+      ],
+      "recommendedNormalScale": 0.7,
+      "albedoGain": 1.23,
+      "roughnessMode": "relative: final clamp(vFinish.x + (tex.g - 0.5) * 0.35, 0.06, 1.0)",
+      "provenance": "Photographed hand-troweled mineral plaster: organic tool marks and pores, restrained interior tonal range",
+      "source": {
+        "asset": "Grey Plaster 03",
+        "url": "https://polyhaven.com/a/grey_plaster_03",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "authors": {
+          "Rob Tuytel": "All"
+        },
+        "sourceDimensionsMillimeters": [
+          1000,
+          1000
+        ],
+        "files": [
+          {
+            "asset": "grey_plaster_03",
+            "kind": "Diffuse",
+            "path": "grey_plaster_03_diff_1k.jpg",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grey_plaster_03/grey_plaster_03_diff_1k.jpg",
+            "md5": "9c46bc51a016ff7e58769a7fdea0c0c9",
+            "bytes": 486612
+          },
+          {
+            "asset": "grey_plaster_03",
+            "kind": "nor_gl",
+            "path": "grey_plaster_03_nor_gl_1k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/grey_plaster_03/grey_plaster_03_nor_gl_1k.png",
+            "md5": "bac82a1a555b22a495d258130381ca3f",
+            "bytes": 5908243
+          },
+          {
+            "asset": "grey_plaster_03",
+            "kind": "Rough",
+            "path": "grey_plaster_03_rough_1k.png",
+            "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/grey_plaster_03/grey_plaster_03_rough_1k.png",
+            "md5": "779af33e52818be16b720bc8803264fb",
+            "bytes": 2292220
+          }
+        ]
+      },
+      "processing": {
+        "rotationQuarterTurnsCounterclockwise": 0,
+        "tintableLuminanceMeanTarget": 230,
+        "tonalDetailStandardDeviationTarget": 12,
+        "scanNormalSlopeGain": 0.8,
+        "boundaryCorrection": "Poisson periodic component, no mirrored tiling",
+        "normalConvention": "OpenGL +Y, rotated tangent vectors with scan",
+        "photographicColor": "Source dye removed; geometry supplies palette; weak mineral chroma retained"
+      },
+      "statistics": {
+        "albedo": {
+          "mean": 230.22167809804282,
+          "std": 7.501393002672,
+          "range": [
+            197,
+            250
+          ],
+          "seam": {
+            "edgeMean": 2.7923177083333335,
+            "adjacentMean": 4.136383683101173,
+            "ratio": 0.6750625479307198
+          }
+        },
+        "normal": {
+          "mean": 171.33137226104736,
+          "std": 59.21467616911759,
+          "range": [
+            35,
+            255
+          ],
+          "seam": {
+            "edgeMean": 1.7566731770833333,
+            "adjacentMean": 2.4034770270751875,
+            "ratio": 0.7308882744850049
+          }
+        },
+        "roughness": {
+          "mean": 127.86843967437744,
+          "std": 16.928927743733095,
+          "range": [
+            91,
+            164
+          ],
+          "seam": {
+            "edgeMean": 5.89208984375,
+            "adjacentMean": 8.618917724370723,
+            "ratio": 0.6836229364493891
+          }
+        }
+      }
+    },
+    "metal": {
+      "albedo": "metal.ktx2",
+      "fallback": "metal.webp",
+      "normal": "metal-normal.ktx2",
+      "normalFallback": "metal-normal.webp",
+      "worldMeters": [
+        0.3,
+        0.3
+      ],
+      "normalHeightStdMeters": 1.4e-05,
+      "provenance": "Original deterministic brushed metal micrograin; no reflected/baked highlights",
+      "mean": 236.004,
+      "std": 3.071,
+      "range": [
+        223,
+        251
+      ],
+      "seamMean": 1.352,
+      "internalGradientMean": 1.715,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "tile": {
+      "albedo": "tile.ktx2",
+      "fallback": "tile.webp",
+      "normal": "tile-normal.ktx2",
+      "normalFallback": "tile-normal.webp",
+      "worldMeters": [
+        0.6,
+        0.6
+      ],
+      "normalHeightStdMeters": 0.0003,
+      "provenance": "Original deterministic 6x6 glazed ceramic tile grid / recessed grout",
+      "mean": 233.118,
+      "std": 14.689,
+      "range": [
+        178,
+        247
+      ],
+      "seamMean": 2.312,
+      "internalGradientMean": 1.072,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "rug": {
+      "albedo": "rug.ktx2",
+      "fallback": "rug.webp",
+      "normal": "rug-normal.ktx2",
+      "normalFallback": "rug-normal.webp",
+      "worldMeters": [
+        0.8,
+        0.8
+      ],
+      "normalHeightStdMeters": 0.0002,
+      "provenance": "Original deterministic wool over-under weave with herringbone variation",
+      "mean": 229.939,
+      "std": 4.973,
+      "range": [
+        214,
+        246
+      ],
+      "seamMean": 4.578,
+      "internalGradientMean": 2.664,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "chips": {
+      "recommendedNormalScale": 0.19,
+      "albedo": "chips-base.ktx2",
+      "fallback": "chips-base.webp",
+      "normal": "chips-normal.ktx2",
+      "normalFallback": "chips-normal.webp",
+      "roughness": "chips-rough.ktx2",
+      "roughnessFallback": "chips-rough.webp"
+    },
+    "paving": {
+      "recommendedNormalScale": 0.68,
+      "albedo": "paving-base.ktx2",
+      "fallback": "paving-base.webp",
+      "normal": "paving-normal.ktx2",
+      "normalFallback": "paving-normal.webp",
+      "roughness": "paving-rough.ktx2",
+      "roughnessFallback": "paving-rough.webp"
+    },
+    "ledge": {
+      "recommendedNormalScale": 0.7,
+      "albedo": "ledge-base.ktx2",
+      "fallback": "ledge-base.webp",
+      "normal": "ledge-normal.ktx2",
+      "normalFallback": "ledge-normal.webp",
+      "roughness": "ledge-rough.ktx2",
+      "roughnessFallback": "ledge-rough.webp"
+    }
+  },
+  "albedoColorSpace": "sRGB; neutral RGB, multiply by geometry material tint",
+  "normalColorSpace": "NoColorSpace / linear",
+  "normalConvention": "OpenGL tangent-space +Y; image rows downward; Three Texture flipY default",
+  "repeat": "RepeatWrapping on S and T; mipmaps included in KTX2; world UV repeat periods in worldMeters",
+  "compression": "UASTC LDR KTX2 + Zstd; albedo 1024 square / 11 mips; normal 512 square / 10 mips",
+  "sky": {
+    "daySource": "https://polyhaven.com/a/klippad_sunrise_2",
+    "nightSource": "https://polyhaven.com/a/rogland_moonlit_night",
+    "author": "Greg Zaal",
+    "license": "CC0-1.0",
+    "dayLighting": "../range/evening.hdr",
+    "daySky": "../range/granite-evening.webp",
+    "horizonDetail": "../range/granite-horizon.webp",
+    "nightSky": "../range/moonlit-sky.webp",
+    "rotationRadians": 1.79070781255,
+    "sunElevationDegrees": 10.01953
+  },
+  "ktx2Orientation": "Source pixels Y-flipped at encoding to match ordinary Three TextureLoader default flipY:true; compressed Texture.flipY remains false"
+}
