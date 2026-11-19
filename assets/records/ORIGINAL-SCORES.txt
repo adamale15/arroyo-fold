@@ -1,0 +1,5 @@
+Arroyo Fold — original 1958-inspired record collection
+
+All six short compositions, synthesized instrument performances, and sleeve illustrations were authored for this project. No existing commercial recording, sampled recording, third-party composition, or ElevenLabs music was used. Original ElevenLabs environmental ambience elsewhere in the house is retained.
+
+Rebuild with work/py/bin/python work/inhabited/build-records.py. The deterministic renderer produces piano, plucked bass, brushed percussion, vibraphone, flute, and chamber strings from oscillators and noise; these are synthesized performances, not recordings of live musicians.

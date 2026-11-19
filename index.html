@@ -16,7 +16,8 @@
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23343c31'/%3E%3Cpath d='M8 24 32 34 56 24M13 27v25h38V27' fill='none' stroke='%23e4d5b5' stroke-width='3'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css?v=bd4eb8ce3d87" />
+    <link rel="stylesheet" href="./visitor-map.css?v=6a279ef02b92" />
   </head>
   <body>
     <canvas
@@ -42,6 +43,19 @@
         <button id="sound-toggle" aria-pressed="false">Sound on</button
         ><button id="pause-open">Pause <span class="key">Esc</span></button>
       </div>
+      <div id="finder" aria-hidden="true" hidden>
+        <div class="film-frame">
+          <i></i><i></i><i></i><i></i><span class="focus-patch"></span
+          ><output>01</output>
+        </div>
+      </div>
+      <div id="camera-tools" aria-label="Camera controls" hidden>
+        <button id="camera-toggle" type="button">Viewfinder</button>
+        <button id="camera-shutter" type="button" title="Release shutter (E)">
+          Take photo
+        </button>
+        <a id="camera-save" hidden download>Save postcard</a>
+      </div>
       <button id="interaction" hidden></button>
       <div id="tour-caption" aria-live="polite"></div>
       <div id="reticle" aria-hidden="true"></div>
@@ -62,7 +76,8 @@
         <div class="pause-actions">
           <button id="resume" autofocus>Resume walk</button
           ><button id="tour-toggle" type="button">Play tour</button
-          ><button id="return-start" type="button">Return to the view</button>
+          ><button id="pause-map" type="button">Map &amp; checklist</button>
+          <button id="return-start" type="button">Return to the view</button>
         </div>
         <label class="time-label" for="time-slider"
           >Time of day
@@ -79,6 +94,10 @@
         <div class="time-markers" aria-hidden="true">
           <span>Afternoon</span><span>Night</span>
         </div>
+        <label class="radar-setting"
+          ><input type="checkbox" id="minimap-enable" checked /> Show minimap
+          while walking</label
+        >
         <div class="help">
           <p>
             <kbd>W A S D</kbd> or arrow keys to walk · <kbd>Shift</kbd> to move
@@ -89,7 +108,14 @@
             <kbd>E</kbd> / click or tap to use an object · <kbd>M</kbd> sound ·
             <kbd>T</kbd> tour
           </p>
-          <p><kbd>H</kbd> hide controls · <kbd>Esc</kbd> pause</p>
+          <p>
+            With the 35 mm camera, <kbd>F</kbd> raises or lowers it and
+            <kbd>E</kbd> takes a photo.
+          </p>
+          <p>
+            <kbd>G</kbd> map &amp; checklist · <kbd>H</kbd> hide controls ·
+            <kbd>Esc</kbd> pause
+          </p>
         </div>
         <button id="pause-sound" type="button" aria-pressed="false">
           Mute sound
@@ -102,6 +128,6 @@
       role="status"
       aria-live="polite"
     ></div>
-    <script type="module" src="./app.js?v=cbcfac1f30d0"></script>
+    <script type="module" src="./app.js?v=ec5f46ac2ff7"></script>
   </body>
 </html>
