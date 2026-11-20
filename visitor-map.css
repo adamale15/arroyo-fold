@@ -222,6 +222,82 @@ body:is(.film, .no-minimap, .using-finder, .visitor-map-open) .visitor-radar {
   font-size: 11px;
   margin-right: 6px;
 }
+.map-framing {
+  display: flex;
+  align-self: flex-start;
+  gap: 2px;
+  padding: 2px;
+  margin-top: 10px;
+  border: 1px solid #687075;
+  border-radius: 3px;
+  background: #23282a;
+}
+.map-framing button {
+  min-height: 34px;
+  padding: 5px 14px;
+  border: 0;
+  border-radius: 2px;
+  background: none;
+  color: var(--map-muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+.map-framing button[aria-pressed="true"] {
+  background: #e8e5d9;
+  color: #202527;
+}
+.map-framing button:hover {
+  box-shadow: inset 0 0 0 1px #d1d5d3;
+}
+.plan-boundary {
+  fill: #d8d9be05;
+  stroke: #d8d9be;
+  stroke-width: 2px;
+  stroke-dasharray: 8px 5px;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+.plan-drive-lane {
+  fill: none;
+  stroke: #8b8576;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+.visitor-radar .plan-boundary {
+  stroke-width: 1.5px;
+  stroke-dasharray: 5px 3px;
+}
+.key-boundary::before {
+  content: "";
+  width: 18px;
+  border-top: 2px dashed #d8d9be;
+}
+.grounds-house-marker {
+  display: none;
+  cursor: pointer;
+}
+.grounds-house-marker rect {
+  fill: #22272a;
+  stroke: #e4e5db;
+  stroke-width: 1.2;
+}
+.grounds-house-marker text {
+  fill: white;
+  font: bold 12px Arial, sans-serif;
+}
+.grounds-house-marker:focus-visible rect,
+.grounds-house-marker:hover rect {
+  stroke: var(--map-gold);
+  stroke-width: 2;
+}
+[data-framing="grounds"] .grounds-house-marker {
+  display: block;
+}
+[data-framing="grounds"] .plan-badge,
+[data-framing="grounds"] .map-site-labels {
+  display: none;
+}
 .floor-surface {
   position: relative;
   flex: 1;
@@ -233,7 +309,7 @@ body:is(.film, .no-minimap, .using-finder, .visitor-map-open) .visitor-radar {
   display: block;
   width: 100%;
   height: 100%;
-  overflow: visible;
+  overflow: hidden;
 }
 .plan-compass {
   position: absolute;
@@ -268,6 +344,8 @@ body:is(.film, .no-minimap, .using-finder, .visitor-map-open) .visitor-radar {
   padding-top: 10px;
   font-size: 14px;
   color: var(--map-ink);
+  flex-wrap: wrap;
+  row-gap: 7px;
 }
 .plan-key span {
   display: inline-flex;
@@ -342,7 +420,8 @@ body:is(.film, .no-minimap, .using-finder, .visitor-map-open) .visitor-radar {
 .plan-scale path {
   stroke: #c1c9cc;
   fill: none;
-  stroke-width: 0.09;
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
 }
 .plan-scale text {
   font:
@@ -558,7 +637,8 @@ body:is(.film, .no-minimap, .using-finder, .visitor-map-open) .visitor-radar {
 }
 @media (pointer: coarse) {
   .room-index-button,
-  .visitor-room-pin {
+  .visitor-room-pin,
+  .map-framing button {
     min-height: 44px;
   }
   .radar-bar kbd {
@@ -643,6 +723,9 @@ body:is(.film, .no-minimap, .using-finder, .visitor-map-open) .visitor-radar {
   }
   .plan-location {
     font-size: 13px;
+  }
+  [data-framing="grounds"] .plan-compass {
+    top: -44px;
   }
   .plan-key {
     padding-left: 5px;
